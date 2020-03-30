@@ -18,11 +18,12 @@ body {
 .header h1 {
     display: inline-block;
     font-size: 48px;
-}
-
-.header h1 .seo {
     color: #d9dcd6;
 }
+/* This class selector is not needed,so added  the color property to the header h1
+.header h1 .seo {
+    color: #d9dcd6;
+} */
 
 .header div {
     padding-top: 15px;
