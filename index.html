@@ -31,7 +31,7 @@
     <div class="hero"></div>
     <div class="content">
         <!-- Inorder to navigate to the same page ,id is required so added id="search-engine-optimization" inside div element-->
-        <!--The section tag is a group of content with a heading,and the ontent has a common meaning, whereas div tag defines a 
+        <!--The section tag is a group of content with a heading,and the content has a common meaning, whereas div tag defines a 
             division in an HTML document. So replacing the div to section tag below-->
         <section id="search-engine-optimization" class="search-engine-optimization">
 
@@ -57,30 +57,35 @@
             </p>
         </section>
     </div>
-    <div class="benefits">
-        <div class="benefit-lead">
+    <!--It seems the content is not related to the webapge,so changed div to aside-->
+    <aside class="benefits">
+        <!--Changed div to section tag,since it is group of related content-->
+        <section class="benefit-lead">
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
+            <!--Added alt attribute for the images below,when problem loading webpage,alt text would shown in the webpage-->
+            <img src="./assets/images/lead-generation.png" alt="Lead Generation" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
-        </div>
-        <div class="benefit-brand">
+        </section>
+        <section class="benefit-brand">
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
+            <img src="./assets/images/brand-awareness.png" alt ="Brand Awareness"/>
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
-        </div>
-        <div class="benefit-cost">
+        </section>
+        <section class="benefit-cost">
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png"></img>
+            <!--img is the self closing tag,so added the closing in tag itself instead of a seperate closing tag-->
+            <img src="./assets/images/cost-management.png" alt="Cost Management">
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
-        </div>
-    </div>
-    <div class="footer">
+        </section>
+    </aside>
+    <!--Since it is an footer, changing div to footer -->
+    <footer class="footer">
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
