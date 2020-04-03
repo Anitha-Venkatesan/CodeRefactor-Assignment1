@@ -20,3 +20,4 @@ Refactoring the marketing webpage to meet the accessibility standards,so that th
 ## References
 
 * https://www.davidmacd.com/blog/alternate-text-for-css-background-images.html
+* http://html5doctor.com/the-figure-figcaption-elements/
