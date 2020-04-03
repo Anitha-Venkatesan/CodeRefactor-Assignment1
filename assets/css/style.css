@@ -50,28 +50,98 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
 .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+   /* background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
+.hero img
+{
+    height: 800px;
+}
+
+.search-engine-optimization {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* same styles so merging the class selectors */
+.search-engine-optimization img , .online-reputation-management img , .social-media-marketing img 
+{ 
+    max-height: 200px;
+}
+
+ /* Image search-engine-optimization and social-media-marketing is positioned absolutely to its ancestor
+  which is class selector .search-engine-optimization and .social-media-marketing respectively,so added absolute position */
 .float-left {
-    float: left;
+    position: absolute;
+    top: 50px;
+    /*float: left;*/
     margin-right: 25px;
 }
 
 .float-right {
-    float: right;
+    position: absolute;   
+   /* float-right */
+    top: 50px;
+    right: 45px;
     margin-left: 25px;
 }
+
+/* same stlyes so merging the class selectors */
+.search-engine-optimization h2 , .social-media-marketing h2 
+{
+    margin-bottom: 20px;
+    font-size: 36px;
+    margin-left: 325px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+/* aligned the parapgraphs depends on heading */
+.search-engine-optimization p, .social-media-marketing p 
+{
+    font-size: 16px;
+    margin-left: 325px;
+}
+.online-reputation-management p
+{
+    font-size: 16px;
+    margin-right: 325px;
+}
+
 
 .content {
     width: 75%;
@@ -138,60 +208,6 @@ p {
     max-width: 150px;
 }
 
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
 .footer {
     padding: 30px;
     clear: both;
@@ -201,4 +217,9 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+/* figure is a block element so added inline to display in it the same line */
+.footer figure
+{
+    display: inline;  
 }
