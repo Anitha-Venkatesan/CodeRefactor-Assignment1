@@ -218,8 +218,5 @@ a {
 .footer h2 {
     font-size: 20px;
 }
-/* figure is a block element so added inline to display in it the same line */
-.footer figure
-{
-    display: inline;  
-}
+
+
